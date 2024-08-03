@@ -55,7 +55,7 @@ def generate_indigo_flight_data(num_flights):
     return flight_data
 
 # MongoDB connection URI
-uri = "mongodb+srv://satwikjain:satwikjain@flightstatus.ghsndi1.mongodb.net/flightStatus?retryWrites=true&w=majority&appName=flightStatus"
+uri = "mongodb://mongodb.hackuser89.svc.cluster.local"
 
 # Create a new client and connect to the server
 client = MongoClient(uri, server_api=ServerApi('1'))

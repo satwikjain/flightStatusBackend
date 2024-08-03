@@ -17,4 +17,4 @@ def update_flight_status(flight_id):
 
 if __name__ == '__main__':
     check_db_connection()
-    socketio.run(app, debug=True)
+    socketio.run(app, host='0.0.0.0', port=27017, debug=True)
